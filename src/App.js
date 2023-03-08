@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from "./components/ExpenseItem";
-import Expenses from './components/Expenses';
+
+import NewExpense from "./components/NewExpense/NewExpense";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
     const expenses = [
@@ -35,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <h2>지출 내역</h2>
+        <NewExpense />
         <Expenses items={expenses}/>
     </div>
   );
